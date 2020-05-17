@@ -1,10 +1,11 @@
-# TP 1 : C. les devtools <!-- omit in toc -->
+<img src="images/readme/header-small.jpg" >
+
+# C. les devtools <!-- omit in toc -->
 
 ## Sommaire <!-- omit in toc -->
 - [B.1. devtools : La console](#b1-devtools--la-console)
 - [B.2. devtools : l'inspecteur d'éléments](#b2-devtools--linspecteur-déléments)
 - [B.3. devtools : l'onglet Sources](#b3-devtools--longlet-sources)
-
 
 ***Lorsque l'on développe en JS, les outils de debug dont on dispose nous sont fournis par le navigateur. Tous les navigateurs (même Internet Explorer...) disposent d'outils de développement. Sur Chrome, pour les afficher c'est donc, comme vu plus haut, la touche <kbd>F12</kbd>. On peut également les afficher en faisant un clic droit dans la page et en cliquant sur "Inspecter l'élément".***
 
@@ -17,7 +18,7 @@ La console sert à afficher les instructions `console.log()` mais aussi les erre
 
 La méthode `console.log()` peut recevoir plusieurs paramètres, ils seront dans ce cas affichés les un après les autres, séparés par un espace. Remplacer le `console.log(...);` du `main.js` par :
 ```js
-console.log('Welcome to ', {title:'PizzaLand', emoji: '🍕'});
+console.log('Welcome to ', {title:'REACTube', emoji: '📺'});
 ```
 
 L'objet `console` est un objet global qui contient la méthode `.log()` mais aussi d'autres méthodes qui permettent d'avoir un rendu différent et de filtrer les messages. Essayez les méthodes suivantes et constatez le résultat dans la console :

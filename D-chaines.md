@@ -1,4 +1,6 @@
-# TP 1 : D. Les chaînes de caractères <!-- omit in toc -->
+<img src="images/readme/header-small.jpg" >
+
+# D. Les chaînes de caractères <!-- omit in toc -->
 
 ## Sommaire <!-- omit in toc -->
 - [D.1. Note à propos d'EcmaScript](#d1-note-à-propos-decmascript)
@@ -23,7 +25,6 @@ Ceci étant dit, tout ce qui a été vu en cours jusqu'ici est compatible avec l
 **NB :** *Dans la vraie vie se reposer sur la version du navigateur de l'utilisateur est trop "risqué", on utilisera donc par la suite le compilateur [Babel](https://babeljs.io) pour rendre notre code compatible avec tous les navigateurs. Pour l'instant on va mettre de côté cette problématique pour ce concentrer sur le code, nous y reviendrons dans la suite du TP.*
 
 
-
 ## D.2. Rappels sur les chaînes en JS
 ***Pour rappel il existe 3 manières de déclarer des chaînes de caractères en JS :***
 ```js
@@ -44,56 +45,57 @@ let s3 = `Les étudiants de ${ getCurrentSchool() } sont les meilleurs`;
 ## D.3. Manipulations simples
 **Entrons dans le vif du sujet :**
 
-1. **Effacez le code contenu dans le fichier `main.js`** pour repartir d'un fichier vide.
-2. **Créez une constante appelée `nom`** et assignez lui la chaîne de caractères `Regina`
-3. **Créez une constante nommée `url`.** Sa valeur initiale sera la concaténation de :
-   - la chaîne de caractères `'images/'`,
-   - la valeur de la variable `nom` transformée en minuscules à l'aide de la méthode `.toLowerCase()` cf. [doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
-   - et de la chaîne de caractères `'.jpg'`
-4. **Sur la ligne suivante, créez une variable nommée `html`** :
+1. **Dans le fichier `js/main.js`, créez une constante appelée `thumbnail`** et assignez lui la chaîne de caractères `'L8KQIPCODV8'`
+1. **Créez une constante nommée `url`.** Sa valeur initiale sera la concaténation de :
+   - la chaîne de caractères `'https://source.unsplash.com/'`,
+   - la valeur de la variable `file`
+   - et de la chaîne de caractères `'/600x340'`
+2. **Sur la ligne suivante, créez une variable nommée `html`** :
 
-	Votre code devra permettre d'assigner à la variable `html` une chaîne qui corresponde au code d'une balise `<a>` (*lien hypertexte*) :
-	- L'URL du lien (*attribut `href`*) devra correspondre à la valeur la constante `url`.
-	- Le contenu de la balise `<a>` correspondra lui aussi à la valeur de la constante `url`
+	Assignez dans la variable `html` une chaîne de caractères. Cette chaîne de caractères devra correspondre au code d'une balise `<a>` (*lien hypertexte*), comme ceci :
+   ```html
+   <a href="https://source.unsplash.com/L8KQIPCODV8/600x340">L8KQIPCODV8</a>
+   ```
+
+	Cette chaîne devra être construire en respectant les contraintes suivantes :
+	- L'URL du lien (*attribut `href`*) devra correspondre à la valeur de la constante `url`
+	- Le contenu de la balise `<a>` correspondra à la valeur de la constante `thumbnail`
 
 	***NB:** pour ça, les template strings sont parfaitement adaptées !*
 
-	Affichez dans la console la valeur de la variable html, elle doit correspondre à la chaîne de caractères suivante :
-   ```html
-   '<a href="images/regina.jpg">images/regina.jpg</a>'
-   ```
+	Affichez dans la console la valeur de la variable `html` pour vérifier qu'elle correspond bien à la valeur souhaitée.
 
 ## D.4. Injection dans la page HTML
 
 5. **C'est le moment d'afficher le contenu de la variable `html` dans la page.**
 
-   Même si nous n'avons pas encore vu comment manipuler la page html grâce à l'API DOM (chapitre 3), vous trouverez ci-dessous le code qui va permettre d'injecter notre balise `<a>` dans la page. A la fin de votre code, ajouter l'instruction suivante :
+   Pour manipuler la page html on utilise pour le moment l'API DOM, et notamment la méthode [querySelector](https://developer.mozilla.org/fr/docs/Web/API/Document/querySelector) et la propriété [innerHTML](https://developer.mozilla.org/fr/docs/Web/API/Element/innertHTML). <br>A la fin de votre code, ajoutez l'instruction suivante :
    ```js
-   document.querySelector('.pizzasContainer').innerHTML = html;
+   document.querySelector('.videoListContainer').innerHTML = html;
    ```
-   Cette instruction va avoir pour effet d'injecter le code HTML contenu dans la variable `html` à l'intérieur de la balise de classe CSS `"pizzasContainer"`.
+   Cette instruction va injecter le code HTML contenu dans la variable `html` à l'intérieur de la balise de classe CSS `"videoListContainer"`.
 
    Si tout s'est bien passé, vous devriez désormais :
-   - voir le texte 'images/regina.jpg' dans la page de votre navigateur.
-   - pouvoir cliquer sur ce texte et être redirigé vers une image de pizza !
+   - voir le texte 'VIDEO1' dans la page de votre navigateur.
+   - pouvoir cliquer sur ce texte et être redirigé vers une image
 
-   <a href="images/readme/pizzaland-01.jpg"><img src="images/readme/pizzaland-01.jpg" width="80%"></a>
+   <a href="images/readme/screen-01.jpg"><img src="images/readme/screen-01.jpg" width="80%"></a>
 
-6. **Modifiez encore la variable html avant son affichage** en remplaçant le texte contenu dans la balise `<a>` par
-	- **une balise `<img>`** dont la source (_attribut `src`_) sera la chaîne `images/regina.jpg` valeur initiale de la variable `html`.
-	- **une balise `<h4>`** contenant le `nom` de la pizza
+6. **Modifiez encore la variable `html` avant son affichage** en remplaçant le texte contenu dans la balise `<a>` par
+	- **une balise `<img>`** dont la source (_attribut `src`_) sera l'url de l'image
+	- **une balise `<h4>`** contenant le nom original de l'image (ici : `"VIDEO1"`)
 
 	Contrôlez dans l'inspecteur d'éléments que le résultat obtenu est bien :
 	```html
-	<a href="images/regina.jpg">
-		<img src="images/regina.jpg"/>
-		<h4>Regina</h4>
+	<a href="https://source.unsplash.com/L8KQIPCODV8/600x340">
+		<img src="https://source.unsplash.com/L8KQIPCODV8/600x340"/>
+		<h4>L8KQIPCODV8</h4>
 	</a>
 	```
 
 	Le rendu doit être celui-ci :<br>
-	<a href="images/readme/pizzaland-02.jpg"><img src="images/readme/pizzaland-02.jpg" width="80%"></a>
+	<a href="images/readme/screen-02.jpg"><img src="images/readme/screen-02.jpg" width="80%"></a>
 
 
 ## Étape suivante <!-- omit in toc -->
-Si tout fonctionne, vous pouvez passer à l'étape suivante : [E. Les tableaux et les objets littéraux](E-tableaux-objets.md)
+Si tout fonctionne, vous pouvez passer à l'étape suivante : [E. Les tableaux et les objets](E-tableaux-objets.md)
