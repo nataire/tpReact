@@ -45,7 +45,7 @@ let s3 = `Les étudiants de ${ getCurrentSchool() } sont les meilleurs`;
 ## D.3. Manipulations simples
 **Entrons dans le vif du sujet :**
 
-1. **Dans le fichier `js/main.js`, créez une constante appelée `thumbnail`** et assignez lui la chaîne de caractères `'L8KQIPCODV8'`
+1. **Dans le fichier `src/main.js`, créez une constante appelée `thumbnail`** et assignez lui la chaîne de caractères `'L8KQIPCODV8'`
 1. **Créez une constante nommée `url`.** Sa valeur initiale sera la concaténation de :
    - la chaîne de caractères `'https://source.unsplash.com/'`,
    - la valeur de la variable `file`
@@ -76,14 +76,14 @@ let s3 = `Les étudiants de ${ getCurrentSchool() } sont les meilleurs`;
    Cette instruction va injecter le code HTML contenu dans la variable `html` à l'intérieur de la balise de classe CSS `"videoListContainer"`.
 
    Si tout s'est bien passé, vous devriez désormais :
-   - voir le texte 'VIDEO1' dans la page de votre navigateur.
+   - voir le texte 'L8KQIPCODV8' dans la page de votre navigateur.
    - pouvoir cliquer sur ce texte et être redirigé vers une image
 
    <a href="images/readme/screen-01.jpg"><img src="images/readme/screen-01.jpg" width="80%"></a>
 
 6. **Modifiez encore la variable `html` avant son affichage** en remplaçant le texte contenu dans la balise `<a>` par
 	- **une balise `<img>`** dont la source (_attribut `src`_) sera l'url de l'image
-	- **une balise `<h4>`** contenant le nom original de l'image (ici : `"VIDEO1"`)
+	- **une balise `<h4>`** contenant le nom original de l'image (ici : `"L8KQIPCODV8"`)
 
 	Contrôlez dans l'inspecteur d'éléments que le résultat obtenu est bien :
 	```html

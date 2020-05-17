@@ -45,19 +45,19 @@ L'installation de Babel se fait avec npm (Node Package Manager - l'outil fourni 
 ## F.2. Compilation
 6. **Vous pouvez maintenant compiler votre code ES6+ en ES5 à l'aide de la commande** :
 	```bash
-	./node_modules/.bin/babel js -d build
+	./node_modules/.bin/babel src -d build
 	```
 	Cette commande va créer un dossier `build` dans lequel sera placé le fichier `main.js` compilé !
 
 	Vérifiez que le fichier `build/main.js` est bien compilé et qu'il ne reste plus de traces de code ES6 (const, let, ...). Si ce n'est pas le cas (s'il reste des `const`, des template strings ou des arrow functions), c'est que le .babelrc est mal configuré ou que vous avez raté une étape !
 
-7. **Une fois le fichier `build/main.js` créé, modifiez le fichier index.html pour charger ce fichier à la place du `js/main.js`.** Rechargez la page pour vérifier que tout fonctionne toujours correctement !
+7. **Une fois le fichier `build/main.js` créé, modifiez le fichier index.html pour charger ce fichier à la place du `src/main.js`.** Rechargez la page pour vérifier que tout fonctionne toujours correctement !
 
 ## F.3. Créer un script de build personnalisé
 Jusque là pour lancer la compilation avec [Babel](https://babeljs.io), nous lancions la commande suivante :
 
 ```bash
-./node_modules/.bin/babel js -d build
+./node_modules/.bin/babel src -d build
 ```
 
 Avec le `package.json` on va créer un "raccourci" pour lancer cette commande plus facilement.
@@ -78,7 +78,7 @@ Avec le `package.json` on va créer un "raccourci" pour lancer cette commande pl
 	```json
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "babel js -d build"
+		"build": "babel src -d build"
 	},
 	```
 	*Vous noterez que le chemin  `./node_modules/.bin/' n'est là, plus nécessaire !*
@@ -89,9 +89,9 @@ Avec le `package.json` on va créer un "raccourci" pour lancer cette commande pl
 	- *soit la section "scripts" n'est pas correctement formatée (pensez qu'il s'agit d'un fichier JSON, par conséquent l'oubli d'une virgule entre chaque script ou au contraire l'ajout d'une virgule à la fin du dernier script, sont considérés comme des erreurs de syntaxe).*
 7. **Ajoutez un nouveau script nommé `"watch"`** qui permettra de lancer la commande :
 	```bash
-	./node_modules/.bin/babel js -d build --verbose --watch --source-maps
+	./node_modules/.bin/babel src -d build --verbose --watch --source-maps
 	```
-	Lancez la commande `npm run watch` dans votre terminal et vérifiez que lorsque vous modifiez le fichier `js/main.js`, le fichier `build/main.js` est bien mis automatiquement à jour.
+	Lancez la commande `npm run watch` dans votre terminal et vérifiez que lorsque vous modifiez le fichier `src/main.js`, le fichier `build/main.js` est bien mis automatiquement à jour.
 
 ## Étape suivante <!-- omit in toc -->
 Si tout fonctionne, vous pouvez passer à l'étape suivante : [G. Filtres et tris](./G-filtres-tri.md)

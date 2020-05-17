@@ -7,7 +7,7 @@
 - [B.2. Tester la page](#b2-tester-la-page)
 
 ## B.1. Inclure le JS dans la page
-**Incluez le fichier `main.js` dans le fichier `index.html`** à l'aide d'une balise `<script>`. (*Pour ouvrir le fichier dans vscodium, utilisez le raccourci* <kbd>CTRL</kbd>+<kbd>P</kbd> puis tapez simplement son nom)<br>
+**Incluez le fichier `src/main.js` dans le fichier `index.html`** à l'aide d'une balise `<script>`. (*Pour ouvrir le fichier dans vscodium, utilisez le raccourci* <kbd>CTRL</kbd>+<kbd>P</kbd> puis tapez simplement son nom)<br>
 
 Comme vu pendant le cours il existe plusieurs manières d'intégrer du code JavaScript dans une page HTML :
 - **en "inline"** c'est à dire directement dans les attributs d'une balise. Dans l'exemple ci-dessous, le code JS s'exécutera lorsque l'utilisateur cliquera sur le lien :
@@ -32,7 +32,7 @@ C'est cette dernière technique que nous emploierons car elle permet de bien sé
 
 C'est cette dernière solution que je préconise car elle présente l'avantage de ne pas mélanger le contenu du document (le `<body>`) avec des informations annexes comme le chargement de scripts JS (qui relèvent plutôt du `<head>`) par ailleurs le support navigateur est très bon (IE10, Android 3+, iOS 5+, etc.)
 
-<a href="https://caniuse.com/#feat=script-defer"><img scr="https://caniuse.bitsofco.de/static/v1/script-defer-1589742247382.webp" /></a>
+<a href="https://caniuse.com/#feat=script-defer"><img src="https://caniuse.bitsofco.de/static/v1/script-defer-1589742247382.webp" /></a>
 
 ## B.2. Tester la page
 **Testez la page pour vérifier que le js est correctement chargé** : Ouvrez les outils de développement de votre navigateur (touche <kbd>F12</kbd> sur Chrome) et ouvrez le panneau "Console".

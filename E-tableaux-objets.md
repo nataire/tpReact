@@ -8,7 +8,12 @@
 
 ## E.1. Manipulation des tableaux
 
-Dans une variable nommée `data`, initialisez un tableau avec 3 cellules contenant les chaines de caractères suivantes : `'L8KQIPCODV8'`, `'umyvrlx0ma8'` et `'L1ijLaihN2A'`. Parcourez ce tableau afin de générer 3 liens sur le modèle de celui réalisé à l'étape [D. les chaînes de caractères](./D-chaines.md) :
+Dans une constante nommée `data`, initialisez un tableau avec 3 cellules contenant les chaines de caractères suivantes : `'L8KQIPCODV8'`, `'umyvrlx0ma8'` et `'L1ijLaihN2A'`.
+```js
+const data = ['L8KQIPCODV8', 'umyvrlx0ma8', 'L1ijLaihN2A'];
+```
+
+Parcourez ce tableau afin de générer 3 liens sur le modèle de celui réalisé à l'étape [D. les chaînes de caractères](./D-chaines.md) :
 
 ```html
 <a href="https://source.unsplash.com/L8KQIPCODV8/600x340">
@@ -83,7 +88,7 @@ const data = [
 		file: 'video3.mp4',
 		thumbnail: 'uwIJbtLpvV4'
 	}
-]
+];
 ```
 
 Modifiez la boucle pour générer un code de ce type :
