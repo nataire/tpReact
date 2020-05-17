@@ -71,9 +71,9 @@ let s3 = `Les étudiants de ${ getCurrentSchool() } sont les meilleurs`;
 
    Pour manipuler la page html on utilise pour le moment l'API DOM, et notamment la méthode [querySelector](https://developer.mozilla.org/fr/docs/Web/API/Document/querySelector) et la propriété [innerHTML](https://developer.mozilla.org/fr/docs/Web/API/Element/innertHTML). <br>A la fin de votre code, ajoutez l'instruction suivante :
    ```js
-   document.querySelector('.videoListContainer').innerHTML = html;
+   document.querySelector('.videoList').innerHTML = html;
    ```
-   Cette instruction va injecter le code HTML contenu dans la variable `html` à l'intérieur de la balise de classe CSS `"videoListContainer"`.
+   Cette instruction va injecter le code HTML contenu dans la variable `html` à l'intérieur de la balise de classe CSS `"videoList"`.
 
    Si tout s'est bien passé, vous devriez désormais :
    - voir le texte 'L8KQIPCODV8' dans la page de votre navigateur.

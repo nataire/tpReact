@@ -83,7 +83,7 @@ const data = [
 	},
 	{
 		id: 6,
-		title:'Les 12 techniques imparables pour rater un café' ,
+		title:'Les 12 techniques imparables pour rater un café',
 		description:'Vous en avez marre de tout réussir ? Ratez aux moins les cafés grâce à cette vidéo inédite !',
 		file: 'video3.mp4',
 		thumbnail: 'uwIJbtLpvV4'

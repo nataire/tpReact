@@ -3,45 +3,74 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<title>PizzaLand</title>
-
-	<link rel="icon" href="images/icon.png" sizes="96x96">
-
-	<link rel="stylesheet" type="text/css" href="css/flatly-bootstrap.css" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>REACTube</title>
+	<link rel="icon" type="image/png" href="images/icon.png" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/videoList.css">
 </head>
 <body>
-	<main id="appContainer">
+	<header>
+		<nav>
+			<h1 class="logo">Reac<em>Tube</em></h1>
+			<ul class="mainMenu">
+				<li><a href="#">Vidéos</a></li>
+				<li><a href="#">Ajouter</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="appContainer">
 		<div class="container">
-			<header>
-				<nav class="navbar navbar-inverse navbar-fixed-top">
-					<div class="container">
-						<div class="navbar-header">
-							<a class="navbar-brand" href="#">
-								<img src="images/logo.svg" /> PizzaLand
-							</a>
-						</div>
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#" class="pizzaListButton">La carte</a></li>
-							<li><a href="#" class="pizzaFormButton">Ajouter une Pizza</a></li>
-						</ul>
-					</div>
-				</nav>
-			</header>
-			<section class="row marketing">
-				<div class="col-lg-12">
-					<header class="pageTitle"></header>
-					<section class="media-list pizzasContainer">
+			<div class="videoList">
+				<a href="https://source.unsplash.com/L8KQIPCODV8/600x340" class="videoListItem">
+					<img src="https://source.unsplash.com/L8KQIPCODV8/600x340" />
+					<section class="infos">
+						<h4>Le Top 10 des framework JS</h4>
+						<p>Vous n'en croirez pas vos yeux</p>
 					</section>
-				</div>
-			</section>
+				</a>
+				<a href="https://source.unsplash.com/umyvrlx0ma8/600x340" class="videoListItem">
+					<img src="https://source.unsplash.com/umyvrlx0ma8/600x340" />
+					<section class="infos">
+						<h4>5 bonnes raisons de ne pas fuir cette formation</h4>
+						<p>Vous allez halluciner ! Cliquez vite !</p>
+					</section>
+				</a>
+				<a href="https://source.unsplash.com/L1ijLaihN2A/600x340" class="videoListItem">
+					<img src="https://source.unsplash.com/L1ijLaihN2A/600x340" />
+					<section class="infos">
+						<h4>Les plus grands secrets des développeurs React</h4>
+						<p>Cliquez et découvrez avant les autres ces astuces incroyables !</p>
+					</section>
+				</a>
+				<a href="https://source.unsplash.com/XIVDN9cxOVc/600x340" class="videoListItem">
+					<img src="https://source.unsplash.com/XIVDN9cxOVc/600x340" />
+					<section class="infos">
+						<h4>Votre DSI ne veut pas que vous voyiez cette vidéo !</h4>
+						<p>Les experts sont formels : cette méthode de développement mystérieuse va changer votre vie.</p>
+					</section>
+				</a>
+				<a href="https://source.unsplash.com/E9ANYNkN4Sc/600x340" class="videoListItem">
+					<img src="https://source.unsplash.com/E9ANYNkN4Sc/600x340" />
+					<section class="infos">
+						<h4>Les gens vous supplieront de développer leur appli !</h4>
+						<p>Visionnez cette vidéo au plus vite et apprenez les 1022 méthodes de développement les plus rentables.</p>
+					</section>
+				</a>
+				<a href="https://source.unsplash.com/uwIJbtLpvV4/600x340" class="videoListItem">
+					<img src="https://source.unsplash.com/uwIJbtLpvV4/600x340" />
+					<section class="infos">
+						<h4>Les 12 techniques imparables pour rater un café</h4>
+						<p>Vous en avez marre de tout réussir ? Ratez aux moins les cafés grâce à cette vidéo inédite !</p>
+					</section>
+				</a>
+			</div>
 		</div>
-	</main>
+	</section>
 	<footer>
-			Free photos from <a href="https://unsplash.com/unsplash">Unsplash</a>
-			<br>
-			Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+		<div>Une (incroyable) création originale de <a href="http://uidlt.fr">Une idée derrière la tech</a> 2020</div>
+		<div>Free photos from <a href="https://unsplash.com/unsplash">Unsplash</a></div>
 	</footer>
 </body>
 </html>
