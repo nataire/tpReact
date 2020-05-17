@@ -1,4 +1,6 @@
-# TP 1 : F. Compiler avec Babel <!-- omit in toc -->
+<img src="images/readme/header-small.jpg" >
+
+# F. Compiler avec Babel <!-- omit in toc -->
 
 ## Sommaire <!-- omit in toc -->
 - [F.1. Installation](#f1-installation)
