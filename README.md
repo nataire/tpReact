@@ -1,10 +1,9 @@
-# TP 1 - Premiers pas
+<img src="images/readme/header.jpg" />
 
 ## Objectifs
 - Mettre en place un environnement de développement JS
 - prendre en main les outils de debug (devtools)
 - manipuler les types et fonctions de base de JavaScript
-- et en profiter pour poser les bases de l'application ***"Pizzaland"*** 🍕 que nous développerons tout au long des différents TPs
 
 ## Sommaire
 Pour plus de clarté, les instructions du TP se trouvent dans des fichiers distincts (un fichier par sujet), procédez dans l'ordre sinon, ça fonctionnera beaucoup moins bien ! :
