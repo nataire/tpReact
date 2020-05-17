@@ -12,6 +12,6 @@ Pour plus de clarté, les instructions du TP se trouvent dans des fichiers disti
 2. [B. Intégration du JS](./B-integration.md)
 3. [C. Les devtools](./C-devtools.md)
 4. [D. Les chaînes de caractères](./D-chaines.md)
-5. [E. Les tableaux et les objets littéraux](./E-tableaux-objets.md)
+5. [E. Les tableaux et les objets](./E-tableaux-objets.md)
 7. [F. Compiler avec Babel](./F-babel.md)
-8. [G. Filtres, tris et destructuring](./G-filtres-tri.md)
+8. [G. Destructuring](./G-destucturing.md)
