@@ -1,4 +1,4 @@
-<img src="images/readme/header-small.jpg" >
+<img src="images/readme/header-small.png" >
 
 # A. Préparatifs <!-- omit in toc -->
 
