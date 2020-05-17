@@ -94,4 +94,4 @@ Avec le `package.json` on va créer un "raccourci" pour lancer cette commande pl
 	Lancez la commande `npm run watch` dans votre terminal et vérifiez que lorsque vous modifiez le fichier `src/main.js`, le fichier `build/main.js` est bien mis automatiquement à jour.
 
 ## Étape suivante <!-- omit in toc -->
-Si tout fonctionne, vous pouvez passer à l'étape suivante : [G. Filtres et tris](./G-filtres-tri.md)
+Si tout fonctionne, vous pouvez passer à l'étape suivante : [G. destructuring](./G-destructuring.md)

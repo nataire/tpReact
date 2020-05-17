@@ -48,7 +48,7 @@ let s3 = `Les étudiants de ${ getCurrentSchool() } sont les meilleurs`;
 1. **Dans le fichier `src/main.js`, créez une constante appelée `thumbnail`** et assignez lui la chaîne de caractères `'L8KQIPCODV8'`
 1. **Créez une constante nommée `url`.** Sa valeur initiale sera la concaténation de :
    - la chaîne de caractères `'https://source.unsplash.com/'`,
-   - la valeur de la variable `file`
+   - la valeur de la variable `thumbnail`
    - et de la chaîne de caractères `'/600x340'`
 2. **Sur la ligne suivante, créez une variable nommée `html`** :
 
@@ -79,7 +79,7 @@ let s3 = `Les étudiants de ${ getCurrentSchool() } sont les meilleurs`;
    - voir le texte 'L8KQIPCODV8' dans la page de votre navigateur.
    - pouvoir cliquer sur ce texte et être redirigé vers une image
 
-   <a href="images/readme/screen-01.jpg"><img src="images/readme/screen-01.jpg" width="80%"></a>
+   <a href="images/readme/screen-01.png"><img src="images/readme/screen-01.png" ></a>
 
 6. **Modifiez encore la variable `html` avant son affichage** en remplaçant le texte contenu dans la balise `<a>` par
 	- **une balise `<img>`** dont la source (_attribut `src`_) sera l'url de l'image
@@ -94,7 +94,7 @@ let s3 = `Les étudiants de ${ getCurrentSchool() } sont les meilleurs`;
 	```
 
 	Le rendu doit être celui-ci :<br>
-	<a href="images/readme/screen-02.jpg"><img src="images/readme/screen-02.jpg" width="80%"></a>
+	<a href="images/readme/screen-02.png"><img src="images/readme/screen-02.png" ></a>
 
 
 ## Étape suivante <!-- omit in toc -->

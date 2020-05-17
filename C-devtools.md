@@ -14,7 +14,7 @@
 ## B.1. devtools : La console
 La console sert à afficher les instructions `console.log()` mais aussi les erreurs éventuelles dans votre code (vous me direz que ce n'est pas la peine, que vous ne faites jamais d'erreur, mais on sait tous les deux que c'est un mensonge, *"n'est-ce pas ?"*).
 
-<img src="images/readme/devtools-console.jpg" width="80%">
+<img src="images/readme/devtools-console.jpg" >
 
 La méthode `console.log()` peut recevoir plusieurs paramètres, ils seront dans ce cas affichés les un après les autres, séparés par un espace. Remplacer le `console.log(...);` du `main.js` par :
 ```js
@@ -32,7 +32,7 @@ Enfin, la console permet de tester rapidement du code JS grâce à un champ de s
 
 L'inspecteur d'éléments permet de consulter ET de manipuler le code HTML et CSS de la page.
 
-<img src="images/readme/devtools-inspecteur.jpg" width="80%">
+<img src="images/readme/devtools-inspecteur.jpg" >
 
 Il sera utile pour vérifier que le code HTML que va générer votre JS correspond bien à ce qui est attendu.
 
@@ -41,7 +41,7 @@ L'onglet sources permet d'inspecter le code JavaScript de la page, de placer des
 
 C'est probablement l'onglet des devtools le plus important lorsqu'on développe en JavaScript.
 
-<img src="images/readme/devtools-sources.jpg" width="80%">
+<img src="images/readme/devtools-sources.jpg" >
 
 Pour l'utiliser, remplacez le contenu de votre fichier `main.js` en ajoutant le code suivant :
 ```js

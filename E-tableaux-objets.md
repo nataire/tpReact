@@ -39,7 +39,8 @@ Selon votre degré de maîtrise de JS, vous pouvez utiliser une des différentes
 *NB: pour `forEach`, `map` et surtout `reduce` pensez à utiliser les arrow functions !*
 
 Le résultat obtenu sera identique dans les 4 cas :
-<a href="images/readme/screen-03.png"><img src="images/readme/screen-03.png" width="80%"></a>
+
+<a href="images/readme/screen-03.png"><img src="images/readme/screen-03.png" ></a>
 
 ## E.2. Les objets
 Modifiez le tableau `data` : au lieu de 3 chaînes de caractères, on va maintenant y mettre des objets littéraux :
@@ -104,7 +105,7 @@ Modifiez la boucle pour générer un code de ce type :
 
 Le rendu final devra correspondre à ceci :
 
-<a href="images/readme/screen-04.jpg"><img src="images/readme/screen-04.jpg" width="90%"></a>
+<a href="images/readme/screen-04.png"><img src="images/readme/screen-04.png" width="90%"></a>
 
 ## Étape suivante <!-- omit in toc -->
 Si tout fonctionne, vous pouvez passer à l'étape suivante : [F. Compiler avec Babel](./F-babel.md)
