@@ -88,15 +88,20 @@ let htmlFinal = '';
 
 for (let i = 0; i < data.length; i++) {
 
-    const tumbnail = data[i].thumbnail;
-    const url = `https://source.unsplash.com/${tumbnail}/600x340`;
-    htmlFinal += `<a href="${url}">
-                    <img src="${url}"/>
-                    <section class="infos">
-                        <h4>${data[i].title}</h4>
-                        <p>${data[i].description}</p>
-                    </section>
-                </a>`;
+    preparationVideo(data[i]);
 }
 
 document.querySelector('.videoList').innerHTML = htmlFinal;
+
+
+function preparationVideo({thumbnail, title, description}) {
+
+    const url = `https://source.unsplash.com/${thumbnail}/600x340`;
+    htmlFinal += `<a href="${url}">
+                    <img src="${url}"/>
+                    <section class="infos">
+                        <h4>${title}</h4>
+                        <p>${description}</p>
+                    </section>
+                </a>`;
+}

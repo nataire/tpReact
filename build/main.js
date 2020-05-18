@@ -75,10 +75,16 @@ var data = [{
 var htmlFinal = '';
 
 for (var i = 0; i < data.length; i++) {
-  var tumbnail = data[i].thumbnail;
-  var url = "https://source.unsplash.com/".concat(tumbnail, "/600x340");
-  htmlFinal += "<a href=\"".concat(url, "\">\n                    <img src=\"").concat(url, "\"/>\n                    <section class=\"infos\">\n                        <h4>").concat(data[i].title, "</h4>\n                        <p>").concat(data[i].description, "</p>\n                    </section>\n                </a>");
+  preparationVideo(data[i]);
 }
 
 document.querySelector('.videoList').innerHTML = htmlFinal;
+
+function preparationVideo(_ref) {
+  var thumbnail = _ref.thumbnail,
+      title = _ref.title,
+      description = _ref.description;
+  var url = "https://source.unsplash.com/".concat(thumbnail, "/600x340");
+  htmlFinal += "<a href=\"".concat(url, "\">\n                    <img src=\"").concat(url, "\"/>\n                    <section class=\"infos\">\n                        <h4>").concat(title, "</h4>\n                        <p>").concat(description, "</p>\n                    </section>\n                </a>");
+}
 //# sourceMappingURL=main.js.map
