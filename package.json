@@ -1,0 +1,26 @@
+{
+  "name": "reactube",
+  "version": "1.0.0",
+  "description": "<img src=\"images/readme/header.jpg\" />",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d build",
+    "watch": "babel src -d build --verbose --watch --source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nataire/tpReact.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nataire/tpReact/issues"
+  },
+  "homepage": "https://github.com/nataire/tpReact#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6"
+  }
+}
